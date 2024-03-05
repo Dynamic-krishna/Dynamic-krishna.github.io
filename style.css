@@ -1,0 +1,278 @@
+*{
+    margin: 0%;
+}
+body,html{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: radial-gradient(rgb(197 61 37 / 133%), rgb(205 142 142 / 66%)); */
+}
+.logo{
+    /* position: absolute; */
+    display: flex;
+    width: 50px;
+    border-radius: 50%;
+}
+.logo img{
+    width: 50px;
+
+}
+.container{
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 90%;
+    top: 2%;
+    border-radius: 8px;
+    height:100%;
+    box-shadow: 0 0 8px rgb(0,0,0,0.2);
+    z-index: 1;
+}
+header, .main, nav,.leftsidenav, nav .rightsidenav,nav .rightsidenav ul {
+    display: flex;
+    margin: auto;
+}
+nav .rightsidenav ul a li{
+    text-decoration: none;
+    margin: 8px;
+    list-style: none;
+}
+nav .rightsidenav ul a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: x-small;
+    font-weight: 600;
+}
+nav .rightsidenav ul a:hover{
+    font-size: large;
+    font-family: fangsong;
+    cursor:pointer;
+    text-shadow: 1px 2px rgba(59, 38, 38, 0.2);
+}
+header{
+    width: 90%;
+    height: 5%;
+}
+main{
+    width: 100%;
+    height: 60%;
+}
+.middone,.middtwo,.skill{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.middone {
+    margin: 42px;
+    text-align: center;
+    text-decoration-color: currentColor;
+    text-wrap: pretty;
+    font: caption;
+}
+.middone h2,.middone h4,.middone h5,.middone button{
+    left: 5px;
+    margin: 4px;
+}
+
+.middone button{
+    position: relative;
+    /* margin: auto; */
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 10px;
+    font-size: large;
+    text-shadow: 3px 4px rgb(255 255 255 / 30%);
+}
+.middone button:hover{
+    background-color:aliceblue;
+    color: black;
+    text-shadow: 3px 4px rgb(0 0 0 / 30%);
+}
+.middtwo img{
+    width: 200px;
+   /* // MIX-BLEND-MODE: overlay; */
+      BORDER-RADIUS: 110PX 93PX 212PX 4PX;
+      box-shadow: 2px 2px 10px 0px rgb(0,0,0,0.4);
+
+}
+.middtwo{
+    position: relative;
+    top: 2px;
+}
+
+.middtwo::before {
+    content: '';
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 15.5em;
+    height: 16.5em;
+    top: 2em;
+    border-radius: 92px;
+    background-color: orange;
+    z-index: -2;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.middtwo::after {
+    content: '';
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 14em;
+    height: 15em;
+    top: 3em;
+    border-radius: 92px;
+    background-color: white;
+    z-index: -1;
+    rotate: 46deg;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes anime{
+    0%{
+        rotate:0deg;
+    }
+    25%{
+        rotate: 90deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    75%{
+        rotate: 270deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.skill{
+    width: 100%;
+    height: 180px;
+    margin-left: 15px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.hmtl {
+    width: 90px;
+    height: 90px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    position: relative;
+    top: 10%;
+    box-shadow: 0 0 5px 6px rgba(99, 209, 253, 0.4);
+}
+
+.hmtl div{
+    width: 80px;
+    height: 80px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:aliceblue;
+    color: rgb(2, 8, 14);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 4px solid rgb(141 227 234 / 74%);
+}
+.artical{
+    width: 100%;
+    height: 75%;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+.slider .box {
+    position: absolute;
+    width: 200px;
+    height: 320px;
+    text-align: justify;
+    background-color: #311111;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 110px);
+    top: 0;
+}
+/* backgroudn effect css */
+#backeffect{
+    position: absolute;
+    border: 2px solid rgb(231, 228, 228);
+    top: 10px;
+    left: 1px;
+}
+.backslider,.forwardslider{
+    position: absolute;
+    font-size: xx-large;
+    font-family: monospace;
+    left: 10px;
+    font-size: 92px;
+}
+.forwardslider{
+    left: unset;
+    right: 10px;
+}
+.inactive{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    filter: blur(1px);
+    transform: perspective(48px) rotateX(2deg);
+    animation-name: cradro;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes cradro {
+    0%{
+        transform: perspective(48px) rotateX(2deg); 
+    }
+    25%{
+        transform: perspective(40px) rotateY(1deg);
+    }
+    50%{
+        transform: perspective(58px) rotateX(3deg);
+    }
+    75%{
+        transform: perspective(48px) rotateY(-2deg);
+    }
+    100%{
+        transform: perspective(38px) rotateX(2deg);
+    }
+}
+.active-card{
+    filter: blur(0px);
+}
